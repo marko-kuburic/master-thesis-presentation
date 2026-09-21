@@ -493,6 +493,31 @@ text-align: center;
 position: relative;
 }
 
+.reveal #title-slide #qr-block {
+position: absolute;
+right: 25px;
+top: calc(100% + 26px);
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.reveal #title-slide #qr-block .qr-caption {
+font-size: 0.42em;
+opacity: 0.8;
+margin-bottom: 10px;
+}
+
+.reveal #title-slide #qr-block .qr-image {
+width: 200px;
+height: 200px;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAHqAQAAAADjFjCXAAADh0lEQVR42u2dS47cMAxEifQBfKS+eh/JBxCguCX+5CBAYGqT5HlhTHtcG6HAT7EkS69cHwEOHDjwvwR+il5v++t6/P3Zm970v68LcN3s9evn54eULuD/J1wGkcY1eCVyfMl4KCsHueazfvFv/ONiYp/8g3XAC6yb5PrGuvnzPRg2opmHuc/hrDv9GSsPvMq6GdxGch3Z9zUj3BXrNNeOZ7AO+FbWtVnmzZAW1yz4jp5iIqwDvq+us5Qa7cP3lUHHeaOuA76FdZK61D+50cMCL7MuLgtukU0tEjZZulkXXlh54I9ZZ/Wataozr57rm1M0aZmTsA74U9Y1a1qP5gxr6RaNrPUarquw8sArGbZ5XSfeNLRVqmse8ExIhnXAi92EdqnWL0Rzq8rx0tfqDIOVB/5YOcldqg++cv7VZxEYybDAy6ybvYEn0pRmXSrReYXlZFgHvNzDHt1kkdCGbUqhDDtiNmYvwzrgz+u6W5iL0GdzCI+JR7fxBXod8Gqsu5FwKsJhPHll99Pbug5YB7zUwx7dBWJlmLLORTs3PmlxB+uA17oJ04F/MwfTQs6sxVNDIcMCr9Z1kUPPV3Kf5BGsMP0HvlU5iR6iR1yLbRQ2ljBJ+YVyArzcTahv+PSizYdhamh3qcTew9UJvN5NuOfEVZI8BzODQIxq0euAlzOs9xA2lrCmNWKdsy6nWVYe+MMM23QD7LhcFo66LpJrrv/IsMCLPWyUdHkO21ZvwK9VH6wD/rybkLwfVnzba5ZKskDMHBb4lh72CH+Tp0/Jol3MYcPGDuuAV1iXzcNyP9MkTcnSpkRYB7zWTZhvsyVr09LNSvKyZ2s7Kw+8GOvEjphInqfQ5mLLTkQ9WAf8eQ8bJzmlIb+KJu5DEW8ziHXAdygn2cG5HFP3DkPxsUrFxDrgtbrurpdkf1McsOjiHrEO+Ja67n6SyUK9d7LbodcB39XDShiFzTcsfrpYzsRmbaebAF6r61QRttMlckqdr3ziYJ3kuYN1wOvKic78XbnrvxqfwofC9B94XTkRI1wk3OxlX2u9k1gHfEOGjYlYnLd+t3b6/gr8dcB3sE5iK87tKxMaBN0gcCsHWXngZdZJPkTn44TrcXSYT2mJdcD3sS6ZnML41INrKxNZeeAb6jptX+289TgwNn/5hOk/8I09bF++FObf0YmvUWhdh78OeJF1fPgPOHDg/zz8JyCGaHcTBB2pAAAAAElFTkSuQmCC);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
 .reveal #title-slide #logo-uns,
 .reveal #title-slide #logo-ftn {
 position: absolute;
@@ -636,6 +661,15 @@ color-scheme: light;
 --r-link-color-hover: #1478d6;
 --r-selection-background-color: #bfe3ff;
 --r-selection-color: #1c1c1c;
+}
+
+.reveal #title-slide #qr-block .qr-image {
+background-color: #ffffff;
+box-shadow: 0 0 0 8px #ffffff, 0 0 0 9px rgba(0, 0, 0, 0.08);
+}
+
+:root.light-mode .reveal #title-slide #qr-block .qr-image {
+box-shadow: none;
 }
 </style>
   <style type="text/css">.reveal
